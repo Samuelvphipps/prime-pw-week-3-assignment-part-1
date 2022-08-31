@@ -8,12 +8,11 @@ let animalArray = ['fish', 'cat', 'bird', 'dog'];
 console.log('Animals are: ', animalArray);
 
 // 1.a. TODO: Make an array with some favorite foods
-
+let favoriteFoods =['pizza', 'wild rice', 'bulgogi', 'fish']
 
 // 1.b. TODO: Log your array of foods to the console with a message, similar 
 //      to the example above
-
-
+console.log('My favorite foods are:', favoriteFoods);
 
 // 2. Array.length - tells you how many items are in the array
 console.log('--- 2. Length of an array ---');
@@ -22,7 +21,7 @@ console.log('--- 2. Length of an array ---');
 console.log('Number of animals:', animalArray.length);
 
 // 2.a. TODO: Log to the console the number of foods in your array
-
+console.log('Number of favorite foods:', favoriteFoods.length);
 
 // 3. Accessing array items
 console.log('--- 3. Accessing items in an array ---');
@@ -31,15 +30,22 @@ console.log('--- 3. Accessing items in an array ---');
 console.log('First animal is', animalArray[0])
 
 // 3.a. TODO: Log the second animal in the array 
-
+console.log('Second animal is', animalArray[1]);
 
 // 3.b. TODO: Log the last animal in the array using it's array index 
-
+console.log('Last animal is', animalArray[3]);
 
 // 3.c. (STRETCH) TODO: Log the last animal by using the array length, 
 //      instead of the exact index number of the last item
+const lastAnimal = animalArray[animalArray.length -1]
+console.log('Last animal is', lastAnimal);
+ /* I had trouble with this one and this is the solution i found examples of that worked. 
+ My question regarding this is that I tried the following code and it created an error, 
+ why is that?
 
-
+ Attempted code console.log('last animal is', animalArray[animalArray.lenth - 1]);
+ Why didnt this work? 
+ */
 
 // 4. Adding & Removing Array Items
 console.log('--- 4. Adding and removing array items ---');
@@ -49,7 +55,8 @@ animalArray.push('penguin');
 console.log('Added an animal to end,', animalArray);
 
 // 4.a. TODO: Add a new food at the end of your array & log the array
-
+favoriteFoods.push('noodles');
+console.log('Added food to end of list,', favoriteFoods);
 
 
 // Example: Remove the last animal by using Array.pop
