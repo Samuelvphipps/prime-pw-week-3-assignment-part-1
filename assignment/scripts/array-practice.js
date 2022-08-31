@@ -63,9 +63,11 @@ console.log('Added food to end of list,', favoriteFoods);
 let removedAnimal = animalArray.pop();
 console.log('Removed the last animal', removedAnimal);
 console.log('The animals are now', animalArray);
-
 // 4.b. TODO: Remove the food at the end of your array & 
 //      log both the food removed and the updated array
+let removedFood = favoriteFoods.pop();
+console.log('Removed the last food', removedFood);
+console.log('The foods are now', favoriteFoods);
 
 
 // Example: Add an animal to the beginning using Array.unshift
@@ -73,7 +75,8 @@ animalArray.unshift('walrus');
 console.log(`Added an animal to beginning: ${animalArray}`);
 
 // 4.c. TODO: Add a food at the beginning of the array & log the array
-
+favoriteFoods.unshift('cake');
+console.log('Added a food to the beginning', favoriteFoods);
 
 // Example: Remove the first animal using Array.shift
 removedAnimal = animalArray.shift();
@@ -82,20 +85,37 @@ console.log('The animals are now', animalArray);
 
 // 4.d TODO: Remove the food at the beginning of your array & 
 //     log both the food removed and the updated array
-
+removedFood = favoriteFoods.shift();
+console.log('Removed the first food', removedFood);
+console.log('The foods are now', favoriteFoods);
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
+favoriteFoods[1]='tictacs';
+console.log('Removed and replaced second food, foods are now', favoriteFoods);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
+favoriteFoods.sort();
+console.log('Alphabetized foods and they are now', favoriteFoods);
+favoriteFoods.reverse();
+console.log('Reversed foods alphabetically and they are now', favoriteFoods);
+
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
+
+let foodText = favoriteFoods.join(', and ');
+console.log('My favorite foods are', foodText);
+
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+
+foodsAndAnimals = animalArray.concat(favoriteFoods);
+console.log('The combined lists of animals and foods is', foodsAndAnimals);
+ 
